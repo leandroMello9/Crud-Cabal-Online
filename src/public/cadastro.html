@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="main-cadastro">
+        <form action="/cadastro/novo" method="POST">
+            <label>Login</label>
+            <input type="text" name='login' placeholder="Digite seu login"/>
+            <label>Senha</label>
+            <input type="password" name='senha' placeholder="Digite sua senha">
+            <label>Email</label>
+            <input type="email" name="email" placeholder='Digite seu Email'>
+            <button type="submit">Cadastrar</button>
+            
+    
+        </form>
+        <a href="/cadastro/alterar">Trocar de Senha</a>
+        
+    </div>
+</body>
+<style>
+    body{
+        background-image: url(https://i.pinimg.com/originals/a8/c0/04/a8c0043f0bb8e7cdba223a30fb864605.jpg)
+    }
+    .main-cadastro{
+        background: none;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        float:right;
+        margin-right: 25%;
+        margin-top: 3%;
+        padding-top: 5%;
+        padding-bottom: 10%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .main-cadastro form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: wheat;
+    }
+    .main-cadastro form button{
+        border: solid 5px black;
+        margin-top: 5%;
+        border-radius: 15px;
+    }
+    .main-cadastro form label{
+        margin: 5% 0%;
+        
+    }
+    .main-cadastro input{
+          border-radius: 15px;
+    }
+</style>
+</html>
